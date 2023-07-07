@@ -1,0 +1,13 @@
+#allow user input.
+a = input ("paste the text you want to count the amount of words:")
+
+#define function
+def count_numbers(a):
+    #create dictionary
+    split_text= a.split(" ")
+    my_dictionary= dict.fromkeys(split_text)
+    final_count = len(my_dictionary)
+    return final_count
+
+
+print(f'the amount of words in this text is' + str(final_count))
